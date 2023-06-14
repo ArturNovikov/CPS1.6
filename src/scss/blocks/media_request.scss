@@ -35,4 +35,10 @@
     position: relative;
     transform: translateX(-2px);
   }
+  .aside-menu__btn-cross {
+    display: none;
+  }
+  .aside-menu__logo {
+    margin-left: 0;
+  }
 }
