@@ -1,0 +1,38 @@
+@media (min-width: 1440px) {
+  .wrapper-root {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 320px;
+  }
+  .aside-menu {
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    opacity: 1;
+    transform: translateX(-720px);
+    width: 320px;
+    z-index: 100;
+    visibility: visible;
+    box-shadow: -16px 0px 52px rgba(14, 24, 80, 0.1);
+    transition: all 0.4s ease-out;
+  }
+
+  .btn-repair_show-hide::before {
+    white-space: nowrap;
+    transform: translateX(140px);
+    position: relative;
+  }
+  .btn-checkstatus_show-hide::before {
+    white-space: nowrap;
+    transform: translateX(-60px);
+    position: relative;
+  }
+  img.repair-svg {
+    position: relative;
+    transform: translateX(-2px);
+  }
+  img.checkstatus-svg {
+    position: relative;
+    transform: translateX(-2px);
+  }
+}
