@@ -1,16 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CPS</title>
   </head>
+
   <body>
-    <img src="./img/webpack.svg" alt="Webpack Logo" width="200px" />
-    <h3>Welcome to Webpack 4 starter </h3>
+    <header class="header">
+      <div class="header__left-container">
+        <button class="header__burger btn btn--pink">
+          <img class="burger-svg" src="./img/all1.3/burger.svg" alt="" />
+        </button>
+
+        <div class="header__logo">
+          <a class="header__logo-link" href="#">
+            <img
+              class="logo-svg"
+              src="./img/all1.3/logo.svg"
+              alt="Logo of the company CPS"
+          /></a>
+        </div>
+      </div>
+
+      <div class="header__right-container">
+        <button class="btn-call btn btn--pink" type="button">
+          <img class="call-svg" src="./img/all1.3/Call.svg" alt="Call us" />
+        </button>
+        <button class="btn-chat btn btn--pink" type="button">
+          <img class="chat-svg" src="./img/all1.3/Chat-2.svg" alt="Chat us" />
+        </button>
+        <button class="btn-profile btn btn--pink" type="button">
+          <img
+            class="profile-svg"
+            src="./img/all1.3/Profile.svg"
+            alt="Profile"
+          />
+        </button>
+
+        <span class="btn btn-repair_show-hide-text">Оставить заявку</span>
+        <button class="btn btn-repair btn--pink" type="button">
+          <img class="repair-svg" src="./img/all1.3/repair.svg" alt="Repair" />
+        </button>
+
+        <span class="btn-checkstatus_show-hide-text">Статус ремонта</span>
+        <button class="btn btn-checkstatus btn--pink" type="button">
+          <img
+            cldss="checkstatus-svg"
+            src="./img/all1.3/checkstatus.svg"
+            alt="checkstatus"
+          />
+        </button>
+      </div>
+    </header>
+    <div class="main">
+      <h1 class="main__title">Услуги и сервисы</h1>
+      <div class="main__title-buttons">
+        <button class="btn-repair btn-repair_show-hide btn--pink" type="button">
+          <!-- <span class="btn-repair_show-hide-text">Оставить заявку</span> -->
+          <img class="repair-svg" src="./img/all1.3/repair.svg" alt="Repair" />
+        </button>
+        <button
+          class="btn-checkstatus btn-checkstatus_show-hide btn--pink"
+          type="button"
+        >
+          <img
+            cldss="checkstatus-svg"
+            src="./img/all1.3/checkstatus.svg"
+            alt="checkstatus"
+          />
+          <!-- <span class="btn-checkstatus_show-hide-text">Статус ремонта</span> -->
+        </button>
+      </div>
+    </div>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__list-item" autofocus>
+          <a class="menu__link menu__link--active" href="#"
+            >Ремонтируемые устройства</a
+          >
+        </li>
+        <li class="menu__list-item">
+          <a class="menu__link" href="#">Дополнительные услуги</a>
+        </li>
+        <li class="menu__list-item">
+          <a class="menu__link" href="#">Ремонтируемые бренды</a>
+        </li>
+        <li class="menu__list-item">
+          <a class="menu__link" href="#">Цены на услуги</a>
+        </li>
+        <li class="menu__list-item">
+          <a class="menu__link" href="#">Специальные цены</a>
+        </li>
+        <li class="menu__list-item">
+          <a class="menu__link" href="#">Адреса сервисных центров</a>
+        </li>
+        <li class="menu__list-item">
+          <a class="menu__link" href="#">Отзывы</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="about">
+      <div class="about__text-container">
+        <p class="about__text about__text-first">
+          Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+          Только у нас вы можете отремонтировать свой ноутбук Dell с официальной
+          гарантией производителя.
+        </p>
+
+        <button class="about__show-more-btn" type="button">
+          <img
+            class="arrows"
+            src="./img/all1.3/arrows-dobble.svg"
+            alt="arrows"
+          />Читать далее
+        </button>
+
+        <p class="about__text about__text-second">
+          Мы успешно работаем с 1992 года и заслужили репутацию надежного
+          партнера, что подтверждает большое количество постоянных клиентов. Мы
+          гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь,
+          советуют нас родным и близким.
+        </p>
+
+        <p class="about__text about__text-third">
+          Мы успешно работаем с 1992 года и заслужили репутацию надежного
+          партнера
+        </p>
+      </div>
+      <div class="about__image-container">
+        <img
+          class="about__image"
+          src="./img/all1.3/CPS-Photo.png"
+          alt="CPS bord photo"
+        />
+      </div>
+    </section>
   </body>
 </html>
