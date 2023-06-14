@@ -69,3 +69,49 @@ function myFunction(x) {
 }
 myFunction(x)
 x.addEventListener('change', myFunction)
+
+/*  */
+
+let typesSlideAll = document.querySelectorAll('.types__element')
+let typesWrapper = document.querySelector('.types__wrapper')
+let typesMenu = document.querySelector('.types__menu')
+let y = window.matchMedia('(max-width: 767px)')
+function myFunctionSecond(y) {
+  if (x.matches) {
+    for (let i = 0; i < typesSlideAll.length; i++) {
+      if (!typesSlideAll[i].classList.contains('swiper-slide-types')) {
+        typesSlideAll[i].classList.add('swiper-slide-types')
+      }
+    }
+    if (!typesMenu.classList.contains('swiper-wrapper-types')) {
+      typesMenu.classList.add('swiper-wrapper-types')
+    }
+    if (!typesWrapper.classList.contains('swiper-types')) {
+      typesWrapper.classList.add('swiper-types')
+    }
+
+    let swiperTypes = new Swiper('.swiper-types', {
+      spaceBetween: 16,
+      slidesPerView: 1.18,
+      allowTouchMove: true,
+      speed: 400,
+      height: 72,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      }
+    })
+  } else {
+    let swiperTypes = new Swiper('.swiper-types', {})
+    swiperTypes.destroy()
+    for (let i = 0; i < typesSlideAll.length; i++) {
+      if (typesSlideAll[i].classList.contains('swiper-slide-types')) {
+        typesSlideAll[i].classList.remove('swiper-slide-types')
+      }
+    }
+    typesMenu.classList.remove('swiper-wrapper-types')
+    typesWrapper.classList.remove('swiper-types')
+  }
+}
+myFunctionSecond(y)
+y.addEventListener('change', myFunction)
