@@ -1607,7 +1607,8 @@ btn,
   border-bottom: 1px solid;
   border-bottom-color: #d9fff5; }
 
-.services__title {
+.services__title,
+.types__title {
   font-family: 'TT Lakes';
   font-size: 16px;
   line-height: 24px;
@@ -1620,7 +1621,8 @@ btn,
   padding-bottom: 16px;
   padding-left: 2.858%; }
 
-.services {
+.services,
+.services__types {
   background: #f2f2f2; }
 
 .services__menu {
@@ -1715,10 +1717,12 @@ btn,
     top: 64px; } }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  .services__brands {
+  .services__brands,
+  .services__types {
     overflow: hidden;
     padding-left: 5%; }
-  .services__title {
+  .services__title,
+  .types__title {
     padding-left: 5%; }
   .services__menu {
     flex-wrap: nowrap;
@@ -1753,7 +1757,8 @@ btn,
 @media (min-width: 768px) and (max-width: 1119px) {
   .services__title {
     padding-left: 2.125%; }
-  .services__brands {
+  .services__brands,
+  .services__types {
     margin-left: auto;
     margin-right: auto;
     padding-left: 2.125%; }
@@ -1771,9 +1776,10 @@ btn,
 @media (min-width: 1120px) {
   .services__element--hide {
     display: none; }
-  .services__itile {
+  .services__titile {
     padding-left: 2.8575%; }
-  .services__brands {
+  .services__brands,
+  .services__types {
     margin-left: auto;
     margin-right: auto;
     padding-left: 2.8575%; }
@@ -1815,7 +1821,11 @@ btn,
     transform: translateX(-2px); }
   img.checkstatus-svg {
     position: relative;
-    transform: translateX(-2px); } }
+    transform: translateX(-2px); }
+  .aside-menu__btn-cross {
+    display: none; }
+  .aside-menu__logo {
+    margin-left: 0; } }
 
 /* $bgColor: #24292e;
 $text: #fff;
