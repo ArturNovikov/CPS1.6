@@ -1832,6 +1832,7 @@ btn,
   .footer .copyright {
     width: 218px; }
   .footer .confidential-politics {
+    align-self: flex-start;
     width: 214px; }
   .footer .not-oferta {
     width: 330px;
