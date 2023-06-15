@@ -1,7 +1,6 @@
 .footer {
   @include flexible(flex, space-between, center, row);
   @include font-style(TT Lakes, 14px, 16px, normal, $font-color-gray);
-  column-gap: 10%;
   background-color: $back-ground-main-color;
   padding-left: 32px;
   .copyright {
