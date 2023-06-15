@@ -1610,20 +1610,6 @@ btn,
   border-bottom: 1px solid;
   border-bottom-color: #d9fff5; }
 
-.services__title,
-.types__title {
-  font-family: 'TT Lakes';
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-  text-transform: uppercase;
-  font-weight: normal;
-  color: #7e7e82;
-  background: linear-gradient(to right, #f8f8f8 0%, #ffffff 98.61%);
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 2.858%; }
-
 .services,
 .services__types {
   background: #f8f8f8; }
@@ -1758,8 +1744,6 @@ btn,
     opacity: 1; } }
 
 @media (min-width: 768px) and (max-width: 1119px) {
-  .services__title {
-    padding-left: 2.125%; }
   .services__brands,
   .services__types {
     margin-left: auto;
@@ -1810,13 +1794,15 @@ btn,
     font-size: 14px;
     line-height: 20px;
     font-weight: normal;
-    color: #1b1c21; }
+    color: #1b1c21;
+    letter-spacing: 0.2px; }
   .services__proposal .services__proposal-button {
     font-family: TT lakes;
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
-    color: #1b1c21; }
+    color: #1b1c21;
+    letter-spacing: -0.2px; }
     .services__proposal .services__proposal-button .services__proposal-svg {
       padding-left: 9.4px; }
 
@@ -1830,12 +1816,13 @@ btn,
   line-height: 16px;
   font-weight: normal;
   color: #7e7e82;
+  letter-spacing: 0.2px;
   background-color: #f8f8f8;
   padding-left: 32px;
   padding-top: 32px;
   padding-bottom: 21px; }
   .footer .copyright {
-    width: 218px; }
+    width: 220px; }
   .footer .confidential-politics {
     align-self: flex-start;
     width: 214px; }
@@ -1843,6 +1830,20 @@ btn,
     width: 330px;
     text-align: right;
     padding-right: 33px; }
+
+.services__title {
+  font-family: TT Lakes;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #7e7e82;
+  letter-spacing: -0.2;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #f8f8f8 0%, #ffffff 98.61%);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 2.858%;
+  border-top: 1px solid #d9fff5; }
 
 @media (min-width: 1440px) {
   .wrapper-root {
@@ -1887,7 +1888,9 @@ btn,
       padding-right: 24px; }
   .services__proposal {
     margin-right: 42.06%;
-    padding-left: 24px; } }
+    padding-left: 24px; }
+  .services__title {
+    padding-left: 2.125%; } }
 
 @media (min-width: 320px) and (max-width: 767px) {
   .footer {
