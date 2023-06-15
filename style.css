@@ -1845,6 +1845,33 @@ btn,
   padding-left: 2.858%;
   border-top: 1px solid #d9fff5; }
 
+ul > .types__element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 240px;
+  height: 160px; }
+  ul > .types__element .services__button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 240px;
+    height: 160px; }
+    ul > .types__element .services__button .types__repair {
+      font-family: TT lakes;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+      color: #1b1c21;
+      letter-spacing: -0.2px;
+      align-self: flex-start;
+      padding-top: 16px; }
+    ul > .types__element .services__button .services__svg {
+      align-self: flex-end;
+      padding-bottom: 16px; }
+
 @media (min-width: 1440px) {
   .wrapper-root {
     max-width: 1440px;
