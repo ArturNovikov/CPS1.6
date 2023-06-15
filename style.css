@@ -1028,6 +1028,9 @@ template {
 html {
   font-family: 'TT Lakes', sans-serif; }
 
+.main {
+  border-bottom: 1px solid #d9fff5; }
+
 html {
   box-sizing: border-box; }
 
@@ -1801,8 +1804,7 @@ btn,
   margin-right: 46.77%;
   height: 182px;
   background-color: #f8f8f8;
-  padding-left: 32px;
-  border-bottom: 1px solid #d9fff5; }
+  padding-left: 32px; }
   .services__proposal .servises__proposal-text {
     font-family: TT lakes;
     font-size: 14px;
@@ -1857,7 +1859,8 @@ btn,
     z-index: 100;
     visibility: visible;
     box-shadow: -16px 0px 52px rgba(14, 24, 80, 0.1);
-    transition: all 0.4s ease-out; }
+    transition: all 0.4s ease-out;
+    height: 100%; }
   .btn-repair_show-hide::before {
     white-space: nowrap;
     transform: translateX(140px);
