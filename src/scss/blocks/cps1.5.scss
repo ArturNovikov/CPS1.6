@@ -55,12 +55,12 @@ btn,
 
 .services,
 .services__types {
-  background: #f2f2f2;
+  background: $back-ground-main-color;
 }
 
 .services__menu {
   display: flex;
-  background: #f2f2f2;
+  background: $back-ground-main-color;
   flex-wrap: wrap;
   gap: 16px 2.9415%;
   padding-top: 24px;
@@ -111,7 +111,7 @@ btn,
   padding-left: 32px;
   padding-top: 24px;
   padding-bottom: 34px;
-  background-color: #f2f2f2;
+  background-color: $back-ground-main-color;
   white-space: nowrap;
 }
 

@@ -1,0 +1,17 @@
+.services__proposal {
+  @include flexible(flex, flex-start, flex-start, column);
+  row-gap: 16px;
+  margin-right: 46.77%;
+  height: 182px;
+  background-color: $back-ground-main-color;
+  padding-left: 32px;
+  .servises__proposal-text {
+    @include font-style(TT lakes, 14px, 20px, normal, 0.2px, $font-color-black);
+  }
+  .services__proposal-button {
+    @include font-style(TT lakes, 16px, 24px, 500, -0.2px, $font-color-black);
+    .services__proposal-svg {
+      padding-left: 9.4px;
+    }
+  }
+}

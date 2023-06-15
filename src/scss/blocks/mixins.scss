@@ -5,7 +5,7 @@
   flex-direction: $direction;
 }
 
-@mixin font-style($family, $size, $height, $weight, $color) {
+@mixin font-style($family, $size, $height, $weight, $spacing, $color) {
   font-family: $family;
   font-size: $size;
   line-height: $height;

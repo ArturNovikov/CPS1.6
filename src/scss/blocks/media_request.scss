@@ -51,6 +51,10 @@
       padding-right: 24px;
     }
   }
+  .services__proposal {
+    margin-right: 42.06%;
+    padding-left: 24px;
+  }
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .footer {
@@ -58,5 +62,13 @@
     flex-direction: column;
     row-gap: 16px;
     text-align: center;
+  }
+  .services__proposal {
+    margin-right: 5%;
+    padding-left: 16px;
+    .services__proposal-button {
+      max-width: 192px;
+      text-align: start;
+    }
   }
 }
