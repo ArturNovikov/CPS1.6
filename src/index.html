@@ -60,7 +60,8 @@
         </div>
       </header>
       <!-- main -->
-      <div class="main">
+      <main class="main">
+      <div class="main__title-container">
         <h1 class="main__title">Услуги и сервисы</h1>
         <div class="main__title-buttons">
           <button
@@ -330,9 +331,9 @@
           </div>
         </div>
       </section>
-      <section class="types">
-        <h2 class="types__title">Ремонт различных видов техники</h2>
-      </section>
+      <section class="services">
+        <h2 class="services__title">Ремонт различных видов техники</h2>
+      
       <!-- вторая секция -->
               <div class="services__types types">
           <div class="types__wrapper container container__menu swiper-types">
@@ -509,7 +510,107 @@
           </div>
         </div>
       </section>
+       <!-- prices  -->
       <section class="services">
+          <h2 class="services__title">Цены на услуги</h2>
+
+        <div class="services__types types">
+          <div class="types__wrapper container container__menu swiper-types">
+            <ul class="types__menu services__menu swiper-wrapper-types ">
+              <li class="types__element services__element swiper-slide-types">
+                <button class="btn services__button" type="button">
+                  <img
+                    class="services__svg"
+                    src="./img/brands1.5/acer.svg"
+                    alt="acer logo"
+                  />
+                  <img
+                    class="services__svg"
+                    src="./img/brands1.5/btn-go.svg"
+                    alt="button go-next"
+                  />
+                </button>
+              </li>
+
+              <li class="services__element swiper-slide-types">
+                <button class="btn services__button" type="button">
+                  <img
+                    class="services__svg"
+                    src="./img/brands1.5/apple.svg"
+                    alt="apple logo"
+                  />
+                  <img
+                    class="services__svg"
+                    src="./img/brands1.5/btn-go.svg"
+                    alt="button go-next"
+                  />
+                </button>
+              </li>
+
+              <li class="services__element swiper-slide-types">
+                <button class="btn services__button" type="button">
+                  <img
+                    class="services__svg"
+                    src="./img/brands1.5/bosch.svg"
+                    alt="bosch logo"
+                  />
+                  <img
+                    class="services__svg"
+                    src="./img/brands1.5/btn-go.svg"
+                    alt="button go-next"
+                  />
+                </button>
+              </li>
+
+              <li class="services__element swiper-slide-types">
+                <button class="btn services__button" type="button">
+                  <img
+                    class="services__svg"
+                    src="./img/brands1.5/hp.svg"
+                    alt="hp logo"
+                  />
+                  <img
+                    class="services__svg"
+                    src="./img/brands1.5/btn-go.svg"
+                    alt="button go-next"
+                  />
+                </button>
+              </li>
+
+              <li class="services__element swiper-slide-types">
+                <button class="btn services__button" type="button">
+                  <img
+                    class="services__svg"
+                    src="./img/brands1.5/lenovo.svg"
+                    alt="lenovo logo"
+                  />
+                  <img
+                    class="services__svg"
+                    src="./img/brands1.5/btn-go.svg"
+                    alt="button go-next"
+                  />
+                </button>
+              </li>
+            </ul>
+            <button class="services__show-more-btn btn" type="button">
+              Показать все
+            </button>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="services">
+        <!-- prices  -->
+        <section class="services commercial proposal">
+          <h2 class="services__title">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</h2>
+        </section>
+      </main>
+      <footer class="footer">
+        <p class="footer__item copyright">© 2019 CPS
+          Разработано командой Apesong</p>
+        <p class="footer__item confidential-politics">Политика конфиденциальности</p>
+        <p class="footer__item not-oferta">Информация, размещенная на данной странице, не является публичной офертой</p>
+      </footer>
       <!-- aside -->
       <div class="aside-menu">
         <div class="aside-menu__header">
@@ -566,7 +667,7 @@
             </li>
           </ul>
         </nav>
-        <div class="aside-menu__footer footer">
+        <div class="aside-menu__footer">
           <div class="footer__menu">
             <button class="footer__btn btn--pink" type="button">
               <img class="footer__btn-call--call" src="./img/all1.4/Call.svg" />

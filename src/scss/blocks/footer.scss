@@ -1,0 +1,4 @@
+.footer {
+  @include flexible(flex, space-between, center, row);
+  background-color: $back-ground-main-color;
+}

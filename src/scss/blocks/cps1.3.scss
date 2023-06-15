@@ -136,10 +136,10 @@ body {
   padding-left: 16px;
 }
 
-.main,
+.main__title-container,
 .menu,
 .about {
-  background-color: #f8f8f8;
+  background-color: $back-ground-main-color;
 }
 
 .menu__list {
@@ -353,7 +353,7 @@ body {
   .about__text-third {
     display: none;
   }
-  .main {
+  .main__title-container {
     display: flex;
     justify-content: space-between;
   }

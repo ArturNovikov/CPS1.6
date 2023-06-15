@@ -43,7 +43,11 @@ btn,
   text-transform: uppercase;
   font-weight: normal;
   color: #7e7e82;
-  background: linear-gradient(to right, #f8f8f8 0%, #ffffff 98.61%);
+  background: linear-gradient(
+    to right,
+    $back-ground-main-color 0%,
+    #ffffff 98.61%
+  );
   padding-top: 16px;
   padding-bottom: 16px;
   padding-left: 2.858%;
@@ -139,7 +143,7 @@ btn,
     height: 81px;
     background: linear-gradient(
       270deg,
-      #f8f8f8 16.84%,
+      $back-ground-main-color 16.84%,
       rgba(248, 248, 248, 0.0001) 100%
     );
     z-index: 10;
@@ -156,7 +160,7 @@ btn,
     height: 81px;
     background: linear-gradient(
       270deg,
-      #f8f8f8 16.84%,
+      $back-ground-main-color 16.84%,
       rgba(248, 248, 248, 0.0001) 100%
     );
     z-index: 10;
