@@ -34,25 +34,6 @@ btn,
   border-bottom-color: #d9fff5;
 }
 
-.services__title,
-.types__title {
-  font-family: 'TT Lakes';
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-  text-transform: uppercase;
-  font-weight: normal;
-  color: #7e7e82;
-  background: linear-gradient(
-    to right,
-    $back-ground-main-color 0%,
-    #ffffff 98.61%
-  );
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 2.858%;
-}
-
 .services,
 .services__types {
   background: $back-ground-main-color;
@@ -225,10 +206,6 @@ btn,
 }
 
 @media (min-width: 768px) and (max-width: 1119px) {
-  .services__title {
-    padding-left: 2.125%;
-  }
-
   .services__brands,
   .services__types {
     margin-left: auto;

@@ -1,0 +1,13 @@
+.services__title {
+  @include font-style(TT Lakes, 16px, 24px, normal, -0.2, $font-color-gray);
+  text-transform: uppercase;
+  background: linear-gradient(
+    to right,
+    $back-ground-main-color 0%,
+    $white-background 98.61%
+  );
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 2.858%;
+  border-top: $border-blocks;
+}
