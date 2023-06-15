@@ -3,6 +3,8 @@
   @include font-style(TT Lakes, 14px, 16px, normal, 0.2px, $font-color-gray);
   background-color: $back-ground-main-color;
   padding-left: 32px;
+  padding-top: 32px;
+  padding-bottom: 21px;
   .copyright {
     width: 218px;
   }

@@ -5,6 +5,7 @@
   height: 182px;
   background-color: $back-ground-main-color;
   padding-left: 32px;
+  border-bottom: $border-blocks;
   .servises__proposal-text {
     @include font-style(TT lakes, 14px, 20px, normal, 0.2px, $font-color-black);
   }
