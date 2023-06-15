@@ -1801,7 +1801,8 @@ btn,
   margin-right: 46.77%;
   height: 182px;
   background-color: #f8f8f8;
-  padding-left: 32px; }
+  padding-left: 32px;
+  border-bottom: 1px solid #d9fff5; }
   .services__proposal .servises__proposal-text {
     font-family: TT lakes;
     font-size: 14px;
@@ -1828,7 +1829,9 @@ btn,
   font-weight: normal;
   color: #7e7e82;
   background-color: #f8f8f8;
-  padding-left: 32px; }
+  padding-left: 32px;
+  padding-top: 32px;
+  padding-bottom: 21px; }
   .footer .copyright {
     width: 218px; }
   .footer .confidential-politics {
@@ -1888,7 +1891,11 @@ btn,
     padding: 0;
     flex-direction: column;
     row-gap: 16px;
-    text-align: center; }
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 19px; }
+    .footer .confidential-politics {
+      align-self: center; }
   .services__proposal {
     margin-right: 5%;
     padding-left: 16px; }
