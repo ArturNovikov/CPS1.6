@@ -13,3 +13,8 @@
   color: $color;
   letter-spacing: $spacing;
 }
+
+@mixin width-height($width, $height) {
+  width: $width;
+  height: $height;
+}
