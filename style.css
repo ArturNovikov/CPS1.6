@@ -1146,7 +1146,7 @@ body {
   padding-top: 24px;
   padding-left: 16px; }
 
-.main,
+.main__title-container,
 .menu,
 .about {
   background-color: #f8f8f8; }
@@ -1323,7 +1323,7 @@ body {
   .header,
   .about__text-third {
     display: none; }
-  .main {
+  .main__title-container {
     display: flex;
     justify-content: space-between; }
   .main__title {
@@ -1623,11 +1623,11 @@ btn,
 
 .services,
 .services__types {
-  background: #f2f2f2; }
+  background: #f8f8f8; }
 
 .services__menu {
   display: flex;
-  background: #f2f2f2;
+  background: #f8f8f8;
   flex-wrap: wrap;
   gap: 16px 2.9415%;
   padding-top: 24px; }
@@ -1673,7 +1673,7 @@ btn,
   padding-left: 32px;
   padding-top: 24px;
   padding-bottom: 34px;
-  background-color: #f2f2f2;
+  background-color: #f8f8f8;
   white-space: nowrap; }
 
 .services__show-more-btn::before {
@@ -1792,6 +1792,52 @@ btn,
     height: 190px;
     overflow-y: hidden; } }
 
+.services__proposal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 16px;
+  margin-right: 46.77%;
+  height: 182px;
+  background-color: #f8f8f8;
+  padding-left: 32px; }
+  .services__proposal .servises__proposal-text {
+    font-family: TT lakes;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #1b1c21; }
+  .services__proposal .services__proposal-button {
+    font-family: TT lakes;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #1b1c21; }
+    .services__proposal .services__proposal-button .services__proposal-svg {
+      padding-left: 9.4px; }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  font-family: TT Lakes;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  color: #7e7e82;
+  background-color: #f8f8f8;
+  padding-left: 32px; }
+  .footer .copyright {
+    width: 218px; }
+  .footer .confidential-politics {
+    width: 214px; }
+  .footer .not-oferta {
+    width: 330px;
+    text-align: right;
+    padding-right: 33px; }
+
 @media (min-width: 1440px) {
   .wrapper-root {
     max-width: 1440px;
@@ -1826,6 +1872,28 @@ btn,
     display: none; }
   .aside-menu__logo {
     margin-left: 0; } }
+
+@media (min-width: 768px) and (max-width: 1119px) {
+  .footer {
+    padding-left: 24px; }
+    .footer .not-oferta {
+      padding-right: 24px; }
+  .services__proposal {
+    margin-right: 42.06%;
+    padding-left: 24px; } }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer {
+    padding: 0;
+    flex-direction: column;
+    row-gap: 16px;
+    text-align: center; }
+  .services__proposal {
+    margin-right: 5%;
+    padding-left: 16px; }
+    .services__proposal .services__proposal-button {
+      max-width: 192px;
+      text-align: start; } }
 
 /* $bgColor: #24292e;
 $text: #fff;
