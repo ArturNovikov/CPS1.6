@@ -56,6 +56,7 @@ btn,
   background: #ffffff;
   border: 1px solid #eaeaea;
   border-radius: 6px;
+  @include tab-highlight-color;
 }
 
 .services__button {

@@ -23,3 +23,7 @@
   padding-left: $left;
   padding-top: $top;
 }
+
+@mixin tab-highlight-color() {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}

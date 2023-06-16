@@ -1,6 +1,7 @@
 ul > .types__element {
   @include flexible(flex, space-between, center, row);
   @include width-height(240px, 160px);
+  @include tab-highlight-color;
   .services__button {
     @include flexible(flex, space-between, center, row);
     @include width-height(240px, 160px);
