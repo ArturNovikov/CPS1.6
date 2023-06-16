@@ -1,0 +1,41 @@
+.services__prices div .prices__menu {
+  @include flexible(flex, space-between, stretch, column);
+  flex-wrap: nowrap;
+  gap: 0;
+  @include padding-left-top(32px, 0);
+  padding-right: 32px;
+  /*   overflow-y: none; */
+  height: 100%;
+  width: 100%;
+  .prices__element {
+    &:last-child {
+      margin-bottom: 32px;
+    }
+    @include flexible(flex, space-between, center, row);
+    border: none; /* ???? */
+    padding: 0 24px;
+
+    box-shadow: inset 0px -1px 0px #de1dde, inset 0px -6px 0px 0px red;
+    border-radius: 0;
+    .services__button {
+      @include font-style(
+        TT Lakes,
+        12px,
+        24px,
+        normal,
+        -0.15px,
+        $white-background
+      );
+      text-transform: uppercase;
+      @include width-height(119px, 32px);
+      min-width: auto;
+      background-color: $pink-background;
+      border: none;
+      border-radius: 16px;
+      .services__svg {
+        -webkit-filter: brightness(0) invert(1);
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+}
