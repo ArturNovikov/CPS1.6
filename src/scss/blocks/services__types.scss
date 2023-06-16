@@ -5,7 +5,7 @@ ul > .types__element {
     @include flexible(flex, space-between, center, row);
     @include width-height(240px, 160px);
     .types__repair {
-      @include font-style(TT lakes, 16px, 24px, 500, -0.2px, $font-color-black);
+      @include font-style(TT Lakes, 16px, 24px, 500, -0.2px, $font-color-black);
       align-self: flex-start;
       padding-top: 16px;
     }

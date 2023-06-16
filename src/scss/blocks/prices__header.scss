@@ -1,0 +1,14 @@
+.prices__header {
+  @include flexible(flex, space-between, center, row);
+  @include padding-left-top(2.8575%, 31px);
+  padding-bottom: 16px;
+
+  span {
+    @include font-style(TT Lakes, 14px, 16px, normal, 0.2px, $font-color-gray);
+    mix-blend-mode: normal;
+    opacity: 0.72;
+  }
+  .services__empty-button {
+    @include width-height(119px, 32px);
+  }
+}

@@ -18,3 +18,8 @@
   width: $width;
   height: $height;
 }
+
+@mixin padding-left-top($left, $top) {
+  padding-left: $left;
+  padding-top: $top;
+}

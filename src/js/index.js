@@ -1,30 +1,9 @@
 import '../scss/style.scss'
+import './show-more-btn'
 
 import Swiper, { Navigation, Pagination } from 'swiper'
 Swiper.use([Navigation, Pagination])
 ;('use strict')
-
-const showMoreBtnFunc = function () {
-  let showMore = document.querySelector('.services__show-more-btn')
-
-  showMore.addEventListener('click', function () {
-    let showMoreBtn = document.querySelector('.services__show-more-btn')
-    let servicesMenu = document.querySelector('.services__menu')
-
-    if (!showMoreBtn.classList.contains('open', 'btn--rotate')) {
-      showMoreBtn.classList.add('open', 'btn--rotate')
-      showMoreBtn.textContent = 'Скрыть'
-      servicesMenu.classList.add('services__menu--open')
-      servicesMenu.classList.remove('services__menu--close')
-    } else {
-      showMoreBtn.classList.remove('open', 'btn--rotate')
-      showMoreBtn.textContent = 'Показать все'
-      servicesMenu.classList.add('services__menu--close')
-      servicesMenu.classList.remove('services__menu--open')
-    }
-  })
-}
-showMoreBtnFunc()
 
 let swiperSlideAll = document.querySelectorAll('.services__element')
 let containerMenu = document.querySelector('.container__menu')
