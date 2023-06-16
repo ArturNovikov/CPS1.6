@@ -1080,11 +1080,19 @@ body {
   line-height: 24px;
   letter-spacing: -0.2px;
   color: #1b1c21;
-  font-weight: bold; }
+  font-weight: bold;
+  padding-left: 10px; }
+  .about__show-more-btn::before {
+    position: absolute;
+    content: url(/src/img/all1.3/arrows-dobble.svg);
+    left: 16px;
+    transform: rotate(0deg);
+    transition: rotate 1s ease-in;
+    /* background: #000000 url(images/bg.gif); */ }
 
-.arrows {
-  padding-left: 8px;
-  padding-right: 16px; }
+.about__show-more-btn--open::before {
+  transform: rotate(180deg);
+  transition: rotate 1s ease-in; }
 
 body {
   min-width: 320px;
@@ -1200,6 +1208,15 @@ body {
 .about__show-more-btn {
   padding-bottom: 10px; }
 
+.about__text {
+  height: 150px;
+  overflow-y: hidden;
+  transition: height 0.25s ease-in; }
+
+.about__text--open {
+  height: 100%;
+  transition: height 0.25s ease-in; }
+
 @media (min-width: 1px) and (max-width: 767px) {
   .btn-call,
   .btn-chat,
@@ -1208,9 +1225,7 @@ body {
   .btn-checkstatus_show-hide,
   .btn-repair_show-hide-text,
   .btn-checkstatus_show-hide-text,
-  .main__title-buttoms,
-  .about__text-second,
-  .about__text-third {
+  .main__title-buttoms {
     display: none; }
   .header::before {
     content: '';
@@ -1249,8 +1264,7 @@ body {
   .btn-checkstatus_show-hide,
   .btn-repair_show-hide-text,
   .btn-checkstatus_show-hide-text,
-  .main__title-buttoms,
-  .about__text-second {
+  .main__title-buttoms {
     display: none; }
   .header::before {
     content: '';
@@ -1393,11 +1407,7 @@ body {
     align-items: flex-start; }
   .about__show-more-btn {
     padding-top: 13.78px;
-    order: 1; }
-  .about__text-first {
-    padding-top: 12px; }
-  .about__text-second {
-    padding-top: 20px; } }
+    order: 1; } }
 
 html {
   box-sizing: border-box; }
