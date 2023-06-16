@@ -8,15 +8,29 @@
   height: 100%;
   width: 100%;
   .prices__element {
+    &::after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      background: $divider-color;
+      top: 100%;
+      width: 96.5%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+    }
     &:last-child {
       margin-bottom: 32px;
+      &::after {
+        z-index: -10;
+      }
     }
     @include flexible(flex, space-between, center, row);
     border: none; /* ???? */
     padding: 0 24px;
 
-    box-shadow: inset 0px -1px 0px #de1dde, inset 0px -6px 0px 0px red;
     border-radius: 0;
+
     .services__button {
       @include font-style(
         TT Lakes,
