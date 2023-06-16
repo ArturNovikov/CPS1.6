@@ -72,7 +72,7 @@ body {
 .about__show-more-btn--open {
   &::before {
     transform: translateX(-10px) rotate(180deg);
-    transition: rotate 1s in-ease-in;
+    transition: rotate 1s ease-in;
   }
 }
 
@@ -211,11 +211,11 @@ body {
 .about__text {
   height: 150px;
   overflow-y: hidden;
-  transition: height 0.25s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  @include transition-height;
 }
 .about__text--open {
   height: 100%;
-  transition: height 0.25s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  @include transition-height;
 }
 
 @media (min-width: 1px) and (max-width: 767px) {

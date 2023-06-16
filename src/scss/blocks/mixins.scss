@@ -27,3 +27,7 @@
 @mixin tab-highlight-color() {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+@mixin transition-height() {
+  transition: height 0.25s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}

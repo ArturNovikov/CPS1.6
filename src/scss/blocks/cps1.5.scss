@@ -217,6 +217,7 @@ btn,
   .services__menu {
     height: 190px;
     overflow-y: hidden;
+    transition: height 5s ease-in;
   }
 
   .services__element {
@@ -225,11 +226,13 @@ btn,
 
   .services__menu--open {
     height: auto;
+    transition: height 5s ease-in;
   }
 
   .services__menu--close {
     height: 190px;
     overflow-y: hidden;
+    transition: height 5s ease-in;
   }
 }
 
@@ -252,14 +255,17 @@ btn,
   .services__menu {
     height: 190px;
     overflow-y: hidden;
+    transition: height 5s ease-in;
   }
 
   .services__menu--open {
     height: auto;
+    transition: height 5s ease-in;
   }
 
   .services__menu--close {
     height: 190px;
     overflow-y: hidden;
+    transition: height 5s ease-in;
   }
 }
