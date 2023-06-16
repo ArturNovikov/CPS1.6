@@ -1860,7 +1860,7 @@ ul > .types__element {
     width: 240px;
     height: 160px; }
     ul > .types__element .services__button .types__repair {
-      font-family: TT lakes;
+      font-family: TT Lakes;
       font-size: 16px;
       line-height: 24px;
       font-weight: 500;
@@ -1871,6 +1871,27 @@ ul > .types__element {
     ul > .types__element .services__button .services__svg {
       align-self: flex-end;
       padding-bottom: 16px; }
+
+.prices__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 2.8575%;
+  padding-top: 31px;
+  padding-bottom: 16px; }
+  .prices__header span {
+    font-family: TT Lakes;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #7e7e82;
+    letter-spacing: 0.2px;
+    mix-blend-mode: normal;
+    opacity: 0.72; }
+  .prices__header .services__empty-button {
+    width: 119px;
+    height: 32px; }
 
 @media (min-width: 1440px) {
   .wrapper-root {
