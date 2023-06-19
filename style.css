@@ -1895,7 +1895,7 @@ ul > .types__element {
 
 .prices__header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: row;
   padding-left: 2.8575%;
@@ -1911,12 +1911,14 @@ ul > .types__element {
     letter-spacing: 0.2px;
     mix-blend-mode: normal;
     opacity: 0.72; }
+  .prices__header .services__name {
+    width: 44%; }
   .prices__header .services__empty-button {
     width: 119px;
     height: 32px;
     margin-right: 110px; }
   .prices__header .services__cost {
-    margin-right: 90px; }
+    width: 21.5%; }
 
 .services__prices div .prices__menu {
   display: flex;
@@ -1932,9 +1934,15 @@ ul > .types__element {
   height: 100%;
   width: 100%; }
   .services__prices div .prices__menu .prices__element {
+    font-family: TT Lakes;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #1b1c21;
+    letter-spacing: 0.2px;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: row;
     border: none;
@@ -1956,7 +1964,12 @@ ul > .types__element {
       margin-bottom: 32px; }
       .services__prices div .prices__menu .prices__element:last-child::after {
         z-index: -10; }
+    .services__prices div .prices__menu .prices__element .prices__name {
+      width: 46.6285%; }
+    .services__prices div .prices__menu .prices__element .prices__cost {
+      width: 22.5205%; }
     .services__prices div .prices__menu .prices__element .services__button {
+      margin-left: auto;
       font-family: TT Lakes;
       font-size: 12px;
       line-height: 24px;
