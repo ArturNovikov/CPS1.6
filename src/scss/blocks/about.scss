@@ -1,0 +1,51 @@
+.about__show-more-btn {
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1b1c21;
+  font-weight: bold;
+  padding-left: 10px;
+  &::before {
+    display: inline-block;
+    text-align: center;
+    content: '';
+    @include width-height(15px, 15px);
+    background: transparent url(/src/img/all1.3/arrows-dobble.svg);
+    background-repeat: no-repeat;
+    transform: translateY(5px) rotate(0deg);
+    transition: rotate 1s ease-in;
+  }
+}
+
+.about__show-more-btn--open {
+  &::before {
+    transform: translateX(-10px) rotate(180deg);
+    transition: rotate 1s ease-in;
+  }
+}
+
+.about {
+  background-color: $back-ground-main-color;
+}
+
+.about__text-container {
+  padding-bottom: 10px;
+}
+
+.about__show-more-btn {
+  padding-bottom: 10px;
+}
+
+.about__text {
+  height: 150px;
+  overflow-y: hidden;
+  @include transition-height;
+}
+.about__text--open {
+  height: 100%;
+  @include transition-height;
+}
