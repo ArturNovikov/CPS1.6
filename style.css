@@ -1669,7 +1669,10 @@ body > div > main > section.services.types > div > div > ul > .types__element {
     letter-spacing: -0.2px;
     color: #1b1c21; }
   .btn-checkstatus {
-    margin-right: 32px; }
+    margin-right: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
   .btn-checkstatus_show-hide::before {
     content: 'Статус ремонта';
     float: left;
@@ -1684,7 +1687,10 @@ body > div > main > section.services.types > div > div > ul > .types__element {
     letter-spacing: -0.2px;
     color: #1b1c21; }
   .btn-repair {
-    margin-right: 160px; }
+    margin-right: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
   .menu {
     padding-left: 32px; }
   .menu__list {
@@ -1729,6 +1735,18 @@ body > div > main > section.services.types > div > div > ul > .types__element {
     transition: height 5s ease-in; } }
 
 @media (min-width: 1120px) and (max-width: 1439px) {
+  .main__title-buttons,
+  .btn-repair_show-hide-text,
+  .btn-checkstatus_show-hide-text {
+    display: none; }
+  .header::before {
+    content: '';
+    position: absolute;
+    right: 148px;
+    width: 2px;
+    height: 32px;
+    background-color: #eaeaea;
+    border-radius: 1px; }
   .main__title-container {
     display: flex;
     justify-content: space-between; }
@@ -1737,14 +1755,23 @@ body > div > main > section.services.types > div > div > ul > .types__element {
     padding-top: 42px;
     padding-left: 32px;
     width: 50%; }
-  .main__title-buttons {
+  .header__right-container {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    width: 50%;
-    padding-bottom: 8.37px; }
-  .btn-repair {
-    margin-right: 160px; }
+    align-items: center;
+    justify-self: flex-start; }
+    .header__right-container .btn-call,
+    .header__right-container .btn-chat,
+    .header__right-container .btn-profile,
+    .header__right-container .btn-repair,
+    .header__right-container .btn-checkstatus {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 16px; }
+    .header__right-container .btn-checkstatus {
+      margin-right: 32px; }
+    .header__right-container .btn-profile {
+      margin-right: 42px; }
   .btn-repair_show-hide::before {
     content: 'Оставить заявку';
     float: left;
@@ -1758,8 +1785,6 @@ body > div > main > section.services.types > div > div > ul > .types__element {
     text-align: right;
     letter-spacing: -0.2px;
     color: #1b1c21; }
-  .btn-checkstatus {
-    margin-right: 32px; }
   .btn-checkstatus_show-hide::before {
     content: 'Статус ремонта';
     float: left;
@@ -1837,7 +1862,7 @@ body > div > main > section.services.types > div > div > ul > .types__element {
   .header::before {
     content: '';
     position: absolute;
-    right: 140px;
+    right: 132px;
     width: 2px;
     height: 32px;
     background-color: #eaeaea;
@@ -1845,15 +1870,15 @@ body > div > main > section.services.types > div > div > ul > .types__element {
   .header::after {
     content: '';
     position: absolute;
-    left: 92px;
+    left: 79px;
     width: 2px;
     height: 32px;
     background-color: #eaeaea;
     border-radius: 1px; }
   .header__burger {
     margin-left: 24px; }
-  .header__logo-link {
-    margin-left: 43.73px; }
+  .header__logo .header__logo-link {
+    margin-left: 42px; }
   .btn-checkstatus {
     margin-right: 24px; }
   .btn-profile {
