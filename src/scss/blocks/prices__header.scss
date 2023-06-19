@@ -1,5 +1,5 @@
 .prices__header {
-  @include flexible(flex, space-between, center, row);
+  @include flexible(flex, flex-start, center, row);
   @include padding-left-top(2.8575%, 31px);
   padding-bottom: 16px;
   padding-left: 56px;
@@ -9,11 +9,14 @@
     mix-blend-mode: normal;
     opacity: 0.72;
   }
+  .services__name {
+    width: 44%;
+  }
   .services__empty-button {
     @include width-height(119px, 32px);
     margin-right: 110px;
   }
   .services__cost {
-    margin-right: 90px;
+    width: 21.5%;
   }
 }

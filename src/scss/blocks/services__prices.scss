@@ -8,6 +8,7 @@
   height: 100%;
   width: 100%;
   .prices__element {
+    @include font-style(TT Lakes, 14px, 18px, normal, 0.2px, $font-color-black);
     @include tab-highlight-color;
     &:hover {
       cursor: auto;
@@ -29,13 +30,21 @@
         z-index: -10;
       }
     }
-    @include flexible(flex, space-between, center, row);
+    @include flexible(flex, flex-start, center, row);
     border: none;
     padding: 0 24px;
 
     border-radius: 0;
-
+    .prices__name {
+      width: 46.6285%;
+    }
+    .prices__term {
+    }
+    .prices__cost {
+      width: 22.5205%;
+    }
     .services__button {
+      margin-left: auto;
       @include font-style(
         TT Lakes,
         12px,
