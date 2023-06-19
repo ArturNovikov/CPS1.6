@@ -82,6 +82,7 @@
   }
   .btn-checkstatus {
     margin-right: 32px;
+    @include display-flex-cent-cent();
   }
   .btn-checkstatus_show-hide::before {
     content: 'Статус ремонта';
@@ -99,6 +100,7 @@
   }
   .btn-repair {
     margin-right: 160px;
+    @include display-flex-cent-cent();
   }
   .menu {
     padding-left: 32px;
@@ -161,6 +163,20 @@
   }
 }
 @media (min-width: 1120px) and (max-width: 1439px) {
+  .main__title-buttons,
+  .btn-repair_show-hide-text,
+  .btn-checkstatus_show-hide-text {
+    display: none;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    right: 148px;
+    width: 2px;
+    height: 32px;
+    background-color: $divider-color;
+    border-radius: 1px;
+  }
   .main__title-container {
     display: flex;
     justify-content: space-between;
@@ -171,15 +187,26 @@
     padding-left: 32px;
     width: 50%;
   }
-  .main__title-buttons {
+
+  .header__right-container {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    width: 50%;
-    padding-bottom: 8.37px;
-  }
-  .btn-repair {
-    margin-right: 160px;
+    align-items: center;
+    justify-self: flex-start;
+
+    .btn-call,
+    .btn-chat,
+    .btn-profile,
+    .btn-repair,
+    .btn-checkstatus {
+      @include display-flex-cent-cent();
+      margin-right: 16px;
+    }
+    .btn-checkstatus {
+      margin-right: 32px;
+    }
+    .btn-profile {
+      margin-right: 42px;
+    }
   }
   .btn-repair_show-hide::before {
     content: 'Оставить заявку';
@@ -195,9 +222,7 @@
     letter-spacing: -0.2px;
     color: #1b1c21;
   }
-  .btn-checkstatus {
-    margin-right: 32px;
-  }
+
   .btn-checkstatus_show-hide::before {
     content: 'Статус ремонта';
     float: left;
@@ -300,7 +325,7 @@
   .header::before {
     content: '';
     position: absolute;
-    right: 140px;
+    right: 132px;
     width: 2px;
     height: 32px;
     background-color: $divider-color;
@@ -309,7 +334,7 @@
   .header::after {
     content: '';
     position: absolute;
-    left: 92px;
+    left: 79px;
     width: 2px;
     height: 32px;
     background-color: $divider-color;
@@ -318,8 +343,8 @@
   .header__burger {
     margin-left: 24px;
   }
-  .header__logo-link {
-    margin-left: 43.73px;
+  .header__logo .header__logo-link {
+    margin-left: 42px;
   }
   .btn-checkstatus {
     margin-right: 24px;
