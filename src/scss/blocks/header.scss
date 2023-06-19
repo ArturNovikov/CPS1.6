@@ -1,0 +1,53 @@
+.header {
+  border-bottom: 1px solid;
+  border-bottom-color: $border-bottom-color;
+  background-color: $white-background;
+  min-height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .header__right-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .header__left-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .header__burger {
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header__logo-link {
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-repair {
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-checkstatus {
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn--pink {
+    background: $pink-background;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+    border: none;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
+  }
+}

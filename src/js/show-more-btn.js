@@ -16,6 +16,7 @@ buttonsListener[0].addEventListener('click', function () {
     servicesMenu.classList.remove('services__menu--open')
   }
 })
+
 buttonsListener[1].addEventListener('click', function () {
   let showMoreBtn = document.querySelector('.services__show-more-btn-types')
   let servicesMenu = document.querySelector('.types__menu')

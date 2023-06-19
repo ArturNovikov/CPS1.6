@@ -1,0 +1,23 @@
+.main__title-container {
+  background-color: $back-ground-main-color;
+}
+
+.main__title::before {
+  content: '';
+  width: 4px;
+  height: 40px;
+  position: absolute;
+  left: 0;
+  background: $highlight-color;
+}
+
+.main__title {
+  font-family: 'TT Lakes';
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  color: #1b1c21;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  padding-left: 16px;
+}
