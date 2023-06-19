@@ -48,12 +48,13 @@ x.addEventListener('change', myFunction)
 
 /*  */
 
-let typesSlideAll = document.querySelectorAll('.types__element')
 let typesWrapper = document.querySelector('.types__wrapper')
+let typesSlideAll = document.querySelectorAll('.types__element')
+
 let typesMenu = document.querySelector('.types__menu')
 let y = window.matchMedia('(max-width: 767px)')
 function myFunctionSecond(y) {
-  if (x.matches) {
+  if (y.matches) {
     for (let i = 0; i < typesSlideAll.length; i++) {
       if (!typesSlideAll[i].classList.contains('swiper-slide-types')) {
         typesSlideAll[i].classList.add('swiper-slide-types')
@@ -73,7 +74,7 @@ function myFunctionSecond(y) {
       speed: 400,
       height: 72,
       pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-pagination[i]',
         clickable: true
       }
     })

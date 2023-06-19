@@ -732,5 +732,52 @@
       <!-- aside end -->
       <!-- див внизу -div wrapper-root -->
     </div>
+    <div class="modal">
+      <div class="modal-call__container">
+        <div class="modal-call__form-container modal-call--hide">
+          <h2 class="modal-call__header">Обратная связь</h2>
+          <form class="modal-call__form" action="@" method="post">
+            <input
+              class="modal-call__user-name modal-call__input"
+              type="text"
+              name="userName"
+              value="Имя"
+            /><br />
+            <input
+              class="modal-call__user-phone modal-call__input"
+              type="text"
+              name="userPhone"
+              value="Телефон"
+            /><br />
+            <input
+              class="modal-call__user-email modal-call__input"
+              type="text"
+              name="email"
+              value="Электронная почта"
+            /><br />
+            <textarea
+              class="modal-call__message modal-call__input"
+              name="message"
+              id="modal__call--message"
+              cols="30"
+              rows="10"
+            >
+Сообщение</textarea
+            ><br />
+            <span class="modal-call__contract modal-call__input"
+              >Нажимая “отправить”, вы даете согласие на
+              <a>обработку персональных данных</a> и соглашаетесь с нашей
+              <a>политикой конфиденциальности</a>></span
+            >
+            <input
+              class="submit__button submit__svg"
+              type="submit"
+              value="Отправить"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal__feedback modal__feedback--hide"></div>
   </body>
 </html>

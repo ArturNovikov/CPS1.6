@@ -1,19 +1,3 @@
-console.log('Hello!')
-
-/* работает до ширины экрана 1439 px */
-
-/* aside-menu--hidden - класс для toggle */
-/* 
-вашаем обработчие события на меню бургера
-
-клик по бургеру - запускается проверка условия
-
-если ширина экрана меньше 1439px тогда запускаеться 
-
-classList.toggle('aside-menu--hidden');
-
- */
-
 let maxWidth = window.matchMedia('(max-width: 1439px)')
 let headerBurger = document.querySelector('.header__burger')
 let asideMenu = document.querySelector('.aside-menu')
