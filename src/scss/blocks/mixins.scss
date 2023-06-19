@@ -43,3 +43,26 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin aside-menu() {
+  position: fixed;
+  top: 0px;
+  opacity: 1;
+  width: 320px;
+  z-index: 100;
+  visibility: visible;
+  box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.1);
+  transition: all 0.4s ease-out;
+  height: 100%;
+}
+
+@mixin aside__container() {
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  /* mix-blend-mode: normal; */
+  opacity: 0.96;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}

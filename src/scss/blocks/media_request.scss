@@ -163,6 +163,16 @@
   }
 }
 @media (min-width: 1120px) and (max-width: 1439px) {
+  .aside-menu--hidden,
+  .aside__container--hidden {
+    display: none;
+  }
+  .aside-menu {
+    @include aside-menu;
+  }
+  .aside__container {
+    @include aside__container;
+  }
   .main__title-buttons,
   .btn-repair_show-hide-text,
   .btn-checkstatus_show-hide-text {
@@ -301,6 +311,16 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1119px) {
+  .aside-menu--hidden,
+  .aside__container--hidden {
+    display: none;
+  }
+  .aside-menu {
+    @include aside-menu;
+  }
+  .aside__container {
+    @include aside__container;
+  }
   .footer {
     padding-left: 24px;
     .not-oferta {
@@ -447,6 +467,16 @@
   }
 }
 @media (min-width: 1px) and (max-width: 767px) {
+  .aside-menu--hidden,
+  .aside__container--hidden {
+    display: none;
+  }
+  .aside-menu {
+    @include aside-menu;
+  }
+  .aside__container {
+    @include aside__container;
+  }
   .btn-call,
   .btn-chat,
   .btn-profile,
@@ -571,6 +601,16 @@
 }
 
 @media (min-width: 355px) and (max-width: 767px) {
+  .aside-menu--hidden,
+  .aside__container--hidden {
+    display: none;
+  }
+  .aside-menu {
+    @include aside-menu;
+  }
+  .aside__container {
+    @include aside__container;
+  }
   .services::after {
     content: ' ';
     position: absolute;
@@ -588,6 +628,16 @@
 }
 
 @media (min-width: 1px) and (max-width: 354px) {
+  .aside-menu--hidden,
+  .aside__container--hidden {
+    display: none;
+  }
+  .aside-menu {
+    @include aside-menu;
+  }
+  .aside__container {
+    @include aside__container;
+  }
   .services::after {
     content: ' ';
     position: absolute;
