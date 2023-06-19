@@ -413,6 +413,9 @@
     margin-left: auto;
     margin-right: auto;
     padding-left: 2.125%;
+    .types__element {
+      min-width: 29.8%;
+    }
   }
 
   .services__menu {
@@ -421,7 +424,14 @@
     transition: height 5s ease-in;
   }
 
-  .services__element {
+  body
+    > div
+    > main
+    > section.services.brands
+    > div
+    > div
+    > ul
+    > .services__element {
     min-width: 29.8%;
   }
 
