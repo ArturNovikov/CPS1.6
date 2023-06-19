@@ -4,36 +4,23 @@
 @import './blocks/variables.scss';
 @import './blocks/mixins.scss';
 
-@import './blocks/main.scss';
+@import './blocks/header.scss';
+@import './blocks/main__title.scss';
+@import './blocks/menu.scss';
+@import './blocks/about.scss';
 
-@import './blocks/aside-menu.scss';
-@import './blocks/cps1.5.scss';
-@import './blocks/services__proposal.scss';
-@import './blocks/footer.scss';
+@import './blocks/main.scss';
 @import './blocks/services__title.scss';
+@import './blocks/brands.scss';
 @import './blocks/services__types.scss';
 @import './blocks/prices__header.scss';
 @import './blocks/services__prices.scss';
-@import './blocks/menu.scss';
-@import './blocks/header.scss';
-@import './blocks/main__title.scss';
-@import './blocks/about.scss';
+@import './blocks/services__proposal.scss';
+
+@import './blocks/footer.scss';
+
+@import './blocks/aside-menu.scss';
+
 @import './blocks/media_request.scss';
+
 @import '../../node_modules/swiper/swiper-bundle.css';
-/* $bgColor: #24292e;
-$text: #fff;
-
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
-
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
-} */

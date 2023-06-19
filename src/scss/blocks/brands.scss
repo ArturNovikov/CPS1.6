@@ -1,0 +1,116 @@
+html,
+.btn {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+button,
+.btn,
+.services__element {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.header {
+  border-bottom: 1px solid;
+  border-bottom-color: $border-bottom-color;
+}
+
+.services,
+.services__types {
+  background: $back-ground-main-color;
+}
+
+.services__menu {
+  display: flex;
+  background: $back-ground-main-color;
+  flex-wrap: wrap;
+  gap: 16px 2.9415%;
+  padding-top: 24px;
+  .services__element {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-width: 22.0595%;
+    height: 72px;
+    background: $white-background;
+    border: 1px solid $divider-color;
+    border-radius: 6px;
+    @include tab-highlight-color;
+    .services__button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-width: 100%;
+      height: 72px;
+      background: $white-background;
+      border: 1px solid $divider-color;
+      border-radius: 6px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+}
+
+.services__show-more-btn:focus,
+.services__button:focus {
+  outline: none;
+  box-shadow: inset 0px 0px 6px 6px $border-bottom-color;
+}
+
+.services__show-more-btn:focus {
+  box-shadow: inset 0px -6px 0px 0px $border-bottom-color;
+}
+
+.services__show-more-btn {
+  font-family: 'TT Lakes';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1b1c21;
+  padding-left: 32px;
+  padding-top: 24px;
+  padding-bottom: 34px;
+  background-color: $back-ground-main-color;
+  white-space: nowrap;
+}
+
+.services__show-more-btn::before {
+  position: absolute;
+  content: ' ';
+  background-repeat: no-repeat;
+  background-image: url('/src/img/brands1.5/expand.svg');
+  transform: translateX(-32px);
+  width: 24px;
+  height: 24px;
+}
+
+.btn--rotate::before {
+  position: absolute;
+  content: ' ';
+  background-repeat: no-repeat;
+  background-image: url('/src/img/brands1.5/expand.svg');
+  transform: translateX(-32px) rotate(180deg);
+  width: 24px;
+  height: 24px;
+}

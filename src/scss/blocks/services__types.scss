@@ -1,4 +1,4 @@
-ul > .types__element {
+body > div > main > section.services.types > div > div > ul > .types__element {
   @include flexible(flex, space-between, center, row);
   @include width-height(240px, 160px);
   @include tab-highlight-color;
