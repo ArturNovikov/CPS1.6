@@ -1564,6 +1564,11 @@ body > div > main > section.services.types > div > div > ul > .types__element {
   -moz-column-gap: 16px;
        column-gap: 16px;
   padding-bottom: 16px; }
+  .footer__menu .btn-chat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0; }
 
 .footer__contacts {
   display: flex;
