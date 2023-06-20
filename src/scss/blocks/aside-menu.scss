@@ -118,6 +118,10 @@
   justify-content: flex-start;
   column-gap: 16px;
   padding-bottom: 16px;
+  .btn-chat {
+    @include display-flex-cent-cent();
+    margin: 0;
+  }
 }
 
 .footer__contacts {
