@@ -674,7 +674,7 @@
                   src="./img/all1.4/Call.svg"
                 />
               </button>
-              <button class="footer__btn btn--pink" type="button">
+              <button class="footer__btn btn--pink btn-chat" type="button">
                 <img
                   class="footer__btn-chat--chat"
                   src="./img/all1.4/Chat-2.svg"
@@ -733,9 +733,18 @@
       <!-- див внизу -div wrapper-root -->
     </div>
     <div class="modal">
-      <div class="modal-call__container">
+      <div class="modal-call__container modal-call__container--hide">
         <div class="modal-call__form-container modal-call--hide">
           <h2 class="modal-call__header">Обратная связь</h2>
+          <button
+            class="aside-menu__btn aside-menu__btn-cross btn--pink"
+            type="button"
+          >
+            <img
+              class="aside-menu__btn-close--rotate"
+              src="./img/all1.4/cross.svg"
+            />
+          </button>
           <form class="modal-call__form" action="@" method="post">
             <input
               class="modal-call__user-name modal-call__input"
@@ -766,8 +775,13 @@
             ><br />
             <span class="modal-call__contract modal-call__input"
               >Нажимая “отправить”, вы даете согласие на
-              <a>обработку персональных данных</a> и соглашаетесь с нашей
-              <a>политикой конфиденциальности</a>></span
+              <a class="modal-call__link" href="@"
+                >обработку персональных данных</a
+              >
+              и соглашаетесь с нашей
+              <a class="modal-call__link" href="@"
+                >политикой конфиденциальности</a
+              ></span
             >
             <input
               class="submit__button submit__svg"

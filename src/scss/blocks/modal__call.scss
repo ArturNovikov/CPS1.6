@@ -1,5 +1,5 @@
-.modal > .modal-call__contract {
-  opacity: 0.96;
+.modal {
+  position: relative;
 }
 
 .modal-call__container {
@@ -12,14 +12,9 @@
 }
 
 .modal-call__form-container {
-  position: fixed;
   background: $white-background;
-  opacity: 1;
   height: 100%;
-  top: 0;
-  left: 70%;
-  z-index: 101;
-  opacity: 1;
+  margin-left: auto;
   width: 440px;
   box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
     16px 0px 52px rgba(14, 24, 80, 0.2);
@@ -27,6 +22,21 @@
     @include padding-left-top(32px, 40px);
     padding-bottom: 24px;
     @include font-style(TT Lakes, 24px, 32px, bold, -0.6px, $font-color-black);
+    &::after {
+      content: '';
+      width: 3px;
+      height: 40px;
+      position: absolute;
+      /* left: 100px; */
+      right: 437px;
+      top: 32px;
+      background: $highlight-color;
+    }
+  }
+  .aside-menu__btn {
+    position: absolute;
+    top: 32px;
+    transform: translateX(-72px);
   }
 }
 
@@ -53,10 +63,20 @@
     height: fit-content;
     border: none;
     margin-bottom: 23px;
+    .modal-call__link {
+      color: $pink-background;
+      &:visited {
+        color: $visited-link;
+      }
+      &:active {
+        color: $highlight-color;
+      }
+    }
   }
   .submit__button {
     align-self: flex-end;
     margin-right: 32px;
+
     @include font-style(
       TT Lakes,
       12px,
@@ -66,6 +86,8 @@
       $white-background
     );
     text-transform: uppercase;
+    text-align: start;
+    padding-left: 22px;
     @include width-height(136px, 32px);
     min-width: auto;
     background-color: $pink-background;
@@ -74,10 +96,10 @@
     background-position: 115px;
     border: none;
     border-radius: 16px;
-
-    .submit__svg {
-      background-image: brightness(0) invert(1);
-      filter: brightness(0) invert(1);
-    }
   }
+}
+
+.modal-call--hide,
+.modal-call__container--hide {
+  display: none;
 }
