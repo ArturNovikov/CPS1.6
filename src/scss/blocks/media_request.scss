@@ -467,6 +467,36 @@
   }
 }
 @media (min-width: 1px) and (max-width: 767px) {
+  .modal-call__container {
+    min-width: 320px;
+    .modal-call__form-container {
+      width: 135.38%;
+      .modal-call__header {
+        padding-top: 104px;
+        padding-left: 16px;
+        &::after {
+          left: 0;
+          top: 96px;
+        }
+      }
+      .aside-menu__btn {
+        position: absolute;
+        top: 24px;
+        transform: translateX(16px);
+      }
+      .modal-call__form {
+        padding-left: 16px;
+        width: 72.73%;
+        .modal-call__input {
+          width: 94.74%;
+        }
+        .modal-call__contract {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+
   .aside-menu--hidden,
   .aside__container--hidden {
     display: none;
