@@ -668,7 +668,7 @@
           </nav>
           <div class="aside-menu__footer">
             <div class="footer__menu">
-              <button class="footer__btn btn--pink" type="button">
+              <button class="footer__btn btn-call btn--pink" type="button">
                 <img
                   class="footer__btn-call--call"
                   src="./img/all1.4/Call.svg"
@@ -733,9 +733,68 @@
       <!-- див внизу -div wrapper-root -->
     </div>
     <div class="modal">
+      <div class="modal-feedback__container modal-feedback__container--hide">
+        <div class="modal-feedback__form-container modal-feedback--hide">
+          <h2 class="modal-feedback__header">Обратная связь</h2>
+          <button
+            class="aside-menu__btn aside-menu__btn-cross btn--pink"
+            type="button"
+          >
+            <img
+              class="aside-menu__btn-close--rotate"
+              src="./img/all1.4/cross.svg"
+            />
+          </button>
+          <form class="modal-feedback__form" action="@" method="post">
+            <input
+              class="modal-feedback__user-name modal-feedback__input"
+              type="text"
+              name="userName"
+              value="Имя"
+            /><br />
+            <input
+              class="modal-feedback__user-phone modal-feedback__input"
+              type="text"
+              name="userPhone"
+              value="Телефон"
+            /><br />
+            <input
+              class="modal-feedback__user-email modal-feedback__input"
+              type="text"
+              name="email"
+              value="Электронная почта"
+            /><br />
+            <textarea
+              class="modal-feedback__message modal-feedback__input"
+              name="message"
+              id="modal__feedback--message"
+              cols="30"
+              rows="10"
+            >
+Сообщение</textarea
+            ><br />
+            <span class="modal-feedback__contract modal-feedback__input"
+              >Нажимая “отправить”, вы даете согласие на
+              <a class="modal-feedback__link" href="@"
+                >обработку персональных данных</a
+              >
+              и соглашаетесь с нашей
+              <a class="modal-feedback__link" href="@"
+                >политикой конфиденциальности</a
+              ></span
+            >
+            <input
+              class="submit__button submit__svg"
+              type="submit"
+              value="Отправить"
+            />
+          </form>
+        </div>
+      </div>
+      <!-- modal-call -->
       <div class="modal-call__container modal-call__container--hide">
         <div class="modal-call__form-container modal-call--hide">
-          <h2 class="modal-call__header">Обратная связь</h2>
+          <h2 class="modal-call__header">Заказать звонок</h2>
           <button
             class="aside-menu__btn aside-menu__btn-cross btn--pink"
             type="button"
@@ -747,32 +806,12 @@
           </button>
           <form class="modal-call__form" action="@" method="post">
             <input
-              class="modal-call__user-name modal-call__input"
-              type="text"
-              name="userName"
-              value="Имя"
-            /><br />
-            <input
               class="modal-call__user-phone modal-call__input"
               type="text"
               name="userPhone"
               value="Телефон"
             /><br />
-            <input
-              class="modal-call__user-email modal-call__input"
-              type="text"
-              name="email"
-              value="Электронная почта"
-            /><br />
-            <textarea
-              class="modal-call__message modal-call__input"
-              name="message"
-              id="modal__call--message"
-              cols="30"
-              rows="10"
-            >
-Сообщение</textarea
-            ><br />
+
             <span class="modal-call__contract modal-call__input"
               >Нажимая “отправить”, вы даете согласие на
               <a class="modal-call__link" href="@"
@@ -791,6 +830,7 @@
           </form>
         </div>
       </div>
+      <!-- end of modall call -->
     </div>
     <div class="modal__feedback modal__feedback--hide"></div>
   </body>

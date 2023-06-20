@@ -11,7 +11,6 @@
     position: fixed;
     top: 0px;
     left: 50%;
-    opacity: 1;
     transform: translateX(-720px);
     width: 320px;
     z-index: 100;
@@ -43,6 +42,12 @@
     }
     .aside-menu__logo {
       margin-left: 0;
+    }
+    .aside-menu__header {
+      padding-top: 32px;
+    }
+    .aside-menu__navigation {
+      padding-top: 37.19px;
     }
   }
   .main__title-container {
@@ -172,6 +177,10 @@
   }
   .aside__container {
     @include aside__container;
+    background-color: $slightly-transparent;
+  }
+  .aside-menu__navigation {
+    padding-bottom: 32px;
   }
   .main__title-buttons,
   .btn-repair_show-hide-text,
@@ -317,9 +326,17 @@
   }
   .aside-menu {
     @include aside-menu;
+    .footer__menu {
+      .btn-call {
+        margin-right: 0;
+      }
+    }
   }
   .aside__container {
     @include aside__container;
+  }
+  .aside-menu__navigation {
+    padding-bottom: 32px;
   }
   .footer {
     padding-left: 24px;
@@ -467,6 +484,36 @@
   }
 }
 @media (min-width: 1px) and (max-width: 767px) {
+  .modal-feedback__container {
+    min-width: 320px;
+    .modal-feedback__form-container {
+      width: 135.38%;
+      .modal-feedback__header {
+        padding-top: 104px;
+        padding-left: 16px;
+        &::after {
+          left: 0;
+          top: 96px;
+        }
+      }
+      .aside-menu__btn {
+        position: absolute;
+        top: 24px;
+        transform: translateX(16px);
+      }
+      .modal-feedback__form {
+        padding-left: 16px;
+        width: 72.73%;
+        .modal-feedback__input {
+          width: 94.74%;
+        }
+        .modal-feedback__contract {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+
   .modal-call__container {
     min-width: 320px;
     .modal-call__form-container {
@@ -503,9 +550,17 @@
   }
   .aside-menu {
     @include aside-menu;
+    .footer__menu {
+      .btn-call {
+        @include display-flex-cent-cent;
+      }
+    }
   }
   .aside__container {
     @include aside__container;
+  }
+  .aside-menu__navigation {
+    padding-bottom: 32px;
   }
   .btn-call,
   .btn-chat,
@@ -668,6 +723,7 @@
   .aside__container {
     @include aside__container;
   }
+
   .services::after {
     content: ' ';
     position: absolute;

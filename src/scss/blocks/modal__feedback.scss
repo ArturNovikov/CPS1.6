@@ -1,2 +1,105 @@
-.modal__feedback {
+.modal {
+  position: relative;
+}
+
+.modal-feedback__container {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: $slightly-transparent;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-feedback__form-container {
+  background: $white-background;
+  height: 100%;
+  margin-left: auto;
+  width: 440px;
+  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
+    16px 0px 52px rgba(14, 24, 80, 0.2);
+  .modal-feedback__header {
+    @include padding-left-top(32px, 40px);
+    padding-bottom: 24px;
+    @include font-style(TT Lakes, 24px, 32px, bold, -0.6px, $font-color-black);
+    &::after {
+      content: '';
+      width: 3px;
+      height: 40px;
+      position: absolute;
+      /* left: 100px; */
+      right: 437px;
+      top: 32px;
+      background: $highlight-color;
+    }
+  }
+  .aside-menu__btn {
+    position: absolute;
+    top: 32px;
+    transform: translateX(-72px);
+  }
+}
+
+.modal-feedback__form {
+  box-sizing: border-box;
+  @include flexible(flex, center, flex-start, column);
+  padding-left: 32px;
+  .modal-feedback__input {
+    @include font-style(TT Lakes, 16px, 24px, 500, -0.2px, $font-color-gray);
+    margin-bottom: 0px;
+    width: 376px;
+    height: 48px;
+    padding-left: 16px;
+    background: $white-background;
+    border: 1px solid $divider-color;
+    border-radius: 8px;
+  }
+  .modal-feedback__message {
+    padding-top: 12px;
+    height: 118px;
+  }
+  .modal-feedback__contract {
+    @include font-style(TT Lakes, 14px, 16px, 500, -0.2px, $font-color-gray);
+    height: fit-content;
+    border: none;
+    margin-bottom: 23px;
+    .modal-feedback__link {
+      color: $pink-background;
+      &:visited {
+        color: $visited-link;
+      }
+      &:active {
+        color: $highlight-color;
+      }
+    }
+  }
+  .submit__button {
+    align-self: flex-end;
+    margin-right: 32px;
+
+    @include font-style(
+      TT Lakes,
+      12px,
+      24px,
+      normal,
+      -0.15px,
+      $white-background
+    );
+    text-transform: uppercase;
+    text-align: start;
+    padding-left: 22px;
+    @include width-height(136px, 32px);
+    min-width: auto;
+    background-color: $pink-background;
+    background-image: url('/src/img/all1.6/whiteArrow.svg');
+    background-repeat: no-repeat;
+    background-position: 115px;
+    border: none;
+    border-radius: 16px;
+  }
+}
+
+.modal-feedback--hide,
+.modal-feedback__container--hide {
+  display: none;
 }
