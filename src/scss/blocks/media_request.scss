@@ -484,6 +484,76 @@
   }
 }
 @media (min-width: 1px) and (max-width: 767px) {
+  .prices__header {
+    display: none;
+  }
+  .services__prices div .prices__menu {
+    flex-direction: row;
+    .prices__element {
+      box-sizing: border-box;
+      @include width-height(260px, 200px);
+      @include flexible(flex, space-between, flex-start, column);
+      .services__button {
+        margin-left: 0;
+        align-self: flex-end;
+        position: absolute;
+        top: 152px;
+      }
+      .prices__name,
+      .prices__cost,
+      .prices__term {
+        width: fit-content;
+        &::before {
+          position: absolute;
+          display: inline-block;
+          width: fit-content;
+          @include font-style(
+            TT Lakes,
+            14px,
+            16px,
+            normal,
+            0.2px,
+            $font-color-gray
+          );
+          opacity: 0.72;
+        }
+      }
+
+      .prices__name {
+        padding-top: 36px;
+        &::before {
+          top: 16px;
+          content: 'Ремонтные услуги';
+        }
+      }
+      .prices__cost {
+        &::before {
+          top: 88px;
+          content: 'Цена';
+        }
+      }
+      .prices__term {
+        padding-bottom: 16px;
+        &::before {
+          top: 142px;
+          content: 'Срок';
+        }
+      }
+    }
+  }
+
+  .services__show-more-btn:focus,
+  .services__button:focus {
+    outline: none;
+    box-shadow: none;
+    display: none;
+  }
+
+  .services__show-more-btn:focus {
+    box-shadow: none;
+    display: none;
+  }
+
   .modal-feedback__container {
     min-width: 320px;
     .modal-feedback__form-container {
@@ -661,7 +731,9 @@
     height: 72px;
   }
 
-  div.swiper-pagination {
+  div.swiper-pagination__brands,
+  div.swiper-pagination__types,
+  div.swiper-pagination__prices {
     position: static;
     padding-top: 16px;
     padding-bottom: 32px;

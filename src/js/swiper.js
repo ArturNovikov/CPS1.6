@@ -1,94 +1,49 @@
-import Swiper, { Navigation, Pagination } from 'swiper'
-Swiper.use([Navigation, Pagination])
 ;('use strict')
 
-let swiperSlideAll = document.querySelectorAll('.services__element')
-let containerMenu = document.querySelector('.container__menu')
-let servicesMenu = document.querySelector('.services__menu')
+import Swiper, { Navigation, Pagination } from 'swiper'
+Swiper.use([Navigation, Pagination])
+
+let brandsContainer = document.querySelector('.brands__container')
+let brandsMenu = document.querySelector('.brands__menu')
+let brandsSlidesAll = document.querySelectorAll('.brands__element')
+
 let x = window.matchMedia('(max-width: 767px)')
-function myFunction(x) {
+function myFunctionBrands(x) {
   if (x.matches) {
-    for (let i = 0; i < swiperSlideAll.length; i++) {
-      if (!swiperSlideAll[i].classList.contains('swiper-slide')) {
-        swiperSlideAll[i].classList.add('swiper-slide')
+    for (let i = 0; i < brandsSlidesAll.length; i++) {
+      if (!brandsSlidesAll[i].classList.contains('swiper-slide')) {
+        brandsSlidesAll[i].classList.add('swiper-slide')
       }
     }
-    if (!servicesMenu.classList.contains('swiper-wrapper')) {
-      servicesMenu.classList.add('swiper-wrapper')
+    if (!brandsMenu.classList.contains('swiper-wrapper')) {
+      brandsMenu.classList.add('swiper-wrapper')
     }
-    if (!containerMenu.classList.contains('swiper')) {
-      containerMenu.classList.add('swiper')
+    if (!brandsContainer.classList.contains('swiper')) {
+      brandsContainer.classList.add('swiper')
     }
 
-    let swiper = new Swiper('.swiper', {
+    let swiper1 = new Swiper('.swiper__brands', {
       spaceBetween: 16,
       slidesPerView: 1.18,
       allowTouchMove: true,
       speed: 400,
       height: 72,
       pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-pagination__brands',
         clickable: true
       }
     })
   } else {
-    let swiper = new Swiper('.swiper', {})
-    swiper.destroy()
-    for (let i = 0; i < swiperSlideAll.length; i++) {
-      if (swiperSlideAll[i].classList.contains('swiper-slide')) {
-        swiperSlideAll[i].classList.remove('swiper-slide')
+    let swiper1 = new Swiper('.swiper__brands', {})
+    swiper1.destroy()
+    for (let i = 0; i < brandsSlidesAll.length; i++) {
+      if (brandsSlidesAll[i].classList.contains('swiper-slide')) {
+        brandsSlidesAll[i].classList.remove('swiper-slide')
       }
     }
-    servicesMenu.classList.remove('swiper-wrapper')
-    containerMenu.classList.remove('swiper')
+    brandsMenu.classList.remove('swiper-wrapper')
+    brandsContainer.classList.remove('swiper')
   }
 }
-myFunction(x)
-x.addEventListener('change', myFunction)
-
-/*  */
-
-let typesWrapper = document.querySelector('.types__wrapper')
-let typesSlideAll = document.querySelectorAll('.types__element')
-
-let typesMenu = document.querySelector('.types__menu')
-let y = window.matchMedia('(max-width: 767px)')
-function myFunctionSecond(y) {
-  if (y.matches) {
-    for (let i = 0; i < typesSlideAll.length; i++) {
-      if (!typesSlideAll[i].classList.contains('swiper-slide-types')) {
-        typesSlideAll[i].classList.add('swiper-slide-types')
-      }
-    }
-    if (!typesMenu.classList.contains('swiper-wrapper-types')) {
-      typesMenu.classList.add('swiper-wrapper-types')
-    }
-    if (!typesWrapper.classList.contains('swiper-types')) {
-      typesWrapper.classList.add('swiper-types')
-    }
-
-    let swiperTypes = new Swiper('.swiper-types', {
-      spaceBetween: 16,
-      slidesPerView: 1.18,
-      allowTouchMove: true,
-      speed: 400,
-      height: 72,
-      pagination: {
-        el: '.swiper-pagination[i]',
-        clickable: true
-      }
-    })
-  } else {
-    let swiperTypes = new Swiper('.swiper-types', {})
-    swiperTypes.destroy()
-    for (let i = 0; i < typesSlideAll.length; i++) {
-      if (typesSlideAll[i].classList.contains('swiper-slide-types')) {
-        typesSlideAll[i].classList.remove('swiper-slide-types')
-      }
-    }
-    typesMenu.classList.remove('swiper-wrapper-types')
-    typesWrapper.classList.remove('swiper-types')
-  }
-}
-myFunctionSecond(y)
-y.addEventListener('change', myFunction)
+myFunctionBrands(x)
+x.addEventListener('change', myFunctionBrands)

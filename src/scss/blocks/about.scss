@@ -14,7 +14,7 @@
     text-align: center;
     content: '';
     @include width-height(15px, 15px);
-    background: transparent url(/src/img/all1.3/arrows-dobble.svg);
+    background: url(/src/img/all1.3/arrows-dobble.svg);
     background-repeat: no-repeat;
     transform: translateY(5px) rotate(0deg);
     transition: rotate 1s ease-in;
@@ -41,11 +41,17 @@
 }
 
 .about__text {
-  height: 150px;
+  height: 55%;
   overflow-y: hidden;
   @include transition-height;
+  .about__text-item {
+    display: inline-block;
+    text-indent: 0;
+    text-align: justify;
+    padding-bottom: 18px;
+  }
 }
 .about__text--open {
-  height: 100%;
+  height: fit-content;
   @include transition-height;
 }
