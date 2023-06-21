@@ -1141,7 +1141,7 @@ html {
     content: '';
     width: 15px;
     height: 15px;
-    background: transparent url(/src/img/all1.3/arrows-dobble.svg);
+    background: url(/src/img/all1.3/arrows-dobble.svg);
     background-repeat: no-repeat;
     transform: translateY(5px) rotate(0deg);
     transition: rotate 1s ease-in; }
@@ -1160,12 +1160,19 @@ html {
   padding-bottom: 10px; }
 
 .about__text {
-  height: 150px;
+  height: 55%;
   overflow-y: hidden;
   transition: height 0.25s cubic-bezier(0.55, 0.085, 0.68, 0.53); }
+  .about__text .about__text-item {
+    display: inline-block;
+    text-indent: 0;
+    text-align: justify;
+    padding-bottom: 18px; }
 
 .about__text--open {
-  height: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   transition: height 0.25s cubic-bezier(0.55, 0.085, 0.68, 0.53); }
 
 .main {
@@ -2235,6 +2242,65 @@ body > div > main > section.services.types > div > div > ul > .types__element {
     transition: height 5s ease-in; } }
 
 @media (min-width: 1px) and (max-width: 767px) {
+  .prices__header {
+    display: none; }
+  .services__prices div .prices__menu {
+    flex-direction: row; }
+    .services__prices div .prices__menu .prices__element {
+      box-sizing: border-box;
+      width: 260px;
+      height: 200px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: column; }
+      .services__prices div .prices__menu .prices__element .services__button {
+        margin-left: 0;
+        align-self: flex-end;
+        position: absolute;
+        top: 152px; }
+      .services__prices div .prices__menu .prices__element .prices__name,
+      .services__prices div .prices__menu .prices__element .prices__cost,
+      .services__prices div .prices__menu .prices__element .prices__term {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content; }
+        .services__prices div .prices__menu .prices__element .prices__name::before,
+        .services__prices div .prices__menu .prices__element .prices__cost::before,
+        .services__prices div .prices__menu .prices__element .prices__term::before {
+          position: absolute;
+          display: inline-block;
+          width: -webkit-fit-content;
+          width: -moz-fit-content;
+          width: fit-content;
+          font-family: TT Lakes;
+          font-size: 14px;
+          line-height: 16px;
+          font-weight: normal;
+          color: #7e7e82;
+          letter-spacing: 0.2px;
+          opacity: 0.72; }
+      .services__prices div .prices__menu .prices__element .prices__name {
+        padding-top: 36px; }
+        .services__prices div .prices__menu .prices__element .prices__name::before {
+          top: 16px;
+          content: 'Ремонтные услуги'; }
+      .services__prices div .prices__menu .prices__element .prices__cost::before {
+        top: 88px;
+        content: 'Цена'; }
+      .services__prices div .prices__menu .prices__element .prices__term {
+        padding-bottom: 16px; }
+        .services__prices div .prices__menu .prices__element .prices__term::before {
+          top: 142px;
+          content: 'Срок'; }
+  .services__show-more-btn:focus,
+  .services__button:focus {
+    outline: none;
+    box-shadow: none;
+    display: none; }
+  .services__show-more-btn:focus {
+    box-shadow: none;
+    display: none; }
   .modal-feedback__container {
     min-width: 320px; }
     .modal-feedback__container .modal-feedback__form-container {
@@ -2378,7 +2444,9 @@ body > div > main > section.services.types > div > div > ul > .types__element {
     display: flex;
     align-items: center;
     height: 72px; }
-  div.swiper-pagination {
+  div.swiper-pagination__brands,
+  div.swiper-pagination__types,
+  div.swiper-pagination__prices {
     position: static;
     padding-top: 16px;
     padding-bottom: 32px;
