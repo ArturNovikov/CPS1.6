@@ -318,6 +318,18 @@
     overflow-y: hidden;
     transition: height 5s ease-in;
   }
+  .header::after {
+    content: '';
+    position: absolute;
+    left: 79px;
+    width: 2px;
+    height: 32px;
+    background-color: $divider-color;
+    border-radius: 1px;
+  }
+  .header .header__logo-link {
+    margin-left: 41px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1119px) {
   .aside-menu--hidden,
@@ -754,6 +766,22 @@
     width: 12px;
     height: 12px;
     opacity: 1;
+  }
+  .about__text {
+    height: 88px;
+    overflow-y: hidden;
+    @include transition-height;
+    .about__text-item {
+      display: inline-block;
+      text-indent: 0;
+      text-align: justify;
+      padding-bottom: 18px;
+      width: 94.75%;
+    }
+  }
+  .about__text--open {
+    height: 100%;
+    @include transition-height;
   }
 }
 

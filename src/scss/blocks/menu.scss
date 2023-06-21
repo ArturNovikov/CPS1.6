@@ -1,5 +1,6 @@
 .menu {
   background-color: $back-ground-main-color;
+  padding-bottom: 16.5px;
   .menu__list {
     display: flex;
     overflow-x: scroll;
@@ -27,4 +28,8 @@
       }
     }
   }
+}
+
+.menu__list--active {
+  @include menu__list-action();
 }
