@@ -1098,7 +1098,8 @@ html {
   padding-left: 16px; }
 
 .menu {
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  padding-bottom: 16.5px; }
   .menu .menu__list {
     display: flex;
     overflow-x: scroll;
@@ -1123,6 +1124,11 @@ html {
         background-color: #ffffff;
         border: 2px solid #b8ffec;
         border-radius: 6px; }
+
+.menu__list--active {
+  background-color: #ffffff;
+  border: 2px solid #b8ffec;
+  border-radius: 6px; }
 
 .about__show-more-btn {
   background: none;
@@ -2099,7 +2105,17 @@ body > div > main > section.services.types > div > div > ul > .types__element {
   .services__menu--close {
     height: 190px;
     overflow-y: hidden;
-    transition: height 5s ease-in; } }
+    transition: height 5s ease-in; }
+  .header::after {
+    content: '';
+    position: absolute;
+    left: 79px;
+    width: 2px;
+    height: 32px;
+    background-color: #eaeaea;
+    border-radius: 1px; }
+  .header .header__logo-link {
+    margin-left: 41px; } }
 
 @media (min-width: 768px) and (max-width: 1119px) {
   .aside-menu--hidden,
@@ -2463,7 +2479,20 @@ body > div > main > section.services.types > div > div > ul > .types__element {
     background-color: #dddddd;
     width: 12px;
     height: 12px;
-    opacity: 1; } }
+    opacity: 1; }
+  .about__text {
+    height: 88px;
+    overflow-y: hidden;
+    transition: height 0.25s cubic-bezier(0.55, 0.085, 0.68, 0.53); }
+    .about__text .about__text-item {
+      display: inline-block;
+      text-indent: 0;
+      text-align: justify;
+      padding-bottom: 18px;
+      width: 94.75%; }
+  .about__text--open {
+    height: 100%;
+    transition: height 0.25s cubic-bezier(0.55, 0.085, 0.68, 0.53); } }
 
 @media (min-width: 355px) and (max-width: 767px) {
   .aside-menu--hidden,
