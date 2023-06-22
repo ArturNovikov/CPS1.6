@@ -1150,11 +1150,11 @@ html {
     background-image: url(./static/arrows-dobble.svg);
     background-repeat: no-repeat;
     transform: translateY(5px) rotate(0deg);
-    transition: rotate 1s ease-in; }
+    transition: all 0.25s ease-in-out; }
 
 .about__show-more-btn--open::before {
   transform: translateX(-10px) rotate(180deg);
-  transition: rotate 1s ease-in; }
+  transition: all 0.25s ease-in-out; }
 
 .about {
   background-color: #f8f8f8; }
@@ -1167,8 +1167,7 @@ html {
 
 .about__text {
   height: 55%;
-  overflow-y: hidden;
-  transition: height 0.25s cubic-bezier(0.55, 0.085, 0.68, 0.53); }
+  overflow-y: hidden; }
   .about__text .about__text-item {
     display: inline-block;
     text-indent: 0;
@@ -1178,8 +1177,7 @@ html {
 .about__text--open {
   height: -webkit-fit-content;
   height: -moz-fit-content;
-  height: fit-content;
-  transition: height 0.25s cubic-bezier(0.55, 0.085, 0.68, 0.53); }
+  height: fit-content; }
 
 .main {
   border-bottom: 1px solid #d9fff5; }
@@ -1288,6 +1286,7 @@ button,
   background-repeat: no-repeat;
   background-image: url(./static/arrows-dobble.svg);
   transform: translate(-20px, 6.5px);
+  transition: all 0.25s;
   width: 24px;
   height: 24px; }
 
@@ -1297,6 +1296,7 @@ button,
   background-repeat: no-repeat;
   background-image: url(./static/arrows-dobble.svg);
   transform: translate(-35px, -6.5px) rotate(180deg);
+  transition: all 0.25s;
   width: 24px;
   height: 24px; }
 
@@ -1720,7 +1720,7 @@ body > div > main > section.services.types > div > div > ul > .types__element {
     height: 32px;
     min-width: auto;
     background-color: #ff3e79;
-    background-image: url("/src/img/all1.6/whiteArrow.svg");
+    background-image: url(./static/whiteArrow.svg);
     background-repeat: no-repeat;
     background-position: 115px;
     border: none;
@@ -2495,7 +2495,7 @@ body > div > main > section.services.types > div > div > ul > .types__element {
   .about__text {
     height: 88px;
     overflow-y: hidden;
-    transition: height 0.25s cubic-bezier(0.55, 0.085, 0.68, 0.53); }
+    transition: all 0.25s cubic-bezier(0.55, 0.085, 0.68, 0.53); }
     .about__text .about__text-item {
       display: inline-block;
       text-indent: 0;
@@ -2504,7 +2504,7 @@ body > div > main > section.services.types > div > div > ul > .types__element {
       width: 94.75%; }
   .about__text--open {
     height: 100%;
-    transition: height 0.25s cubic-bezier(0.55, 0.085, 0.68, 0.53); } }
+    transition: all 0.25s cubic-bezier(0.55, 0.085, 0.68, 0.53); } }
 
 @media (min-width: 355px) and (max-width: 767px) {
   .aside-menu--hidden,
