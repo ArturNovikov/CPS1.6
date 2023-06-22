@@ -1147,7 +1147,7 @@ html {
     content: '';
     width: 15px;
     height: 15px;
-    background: url(/src/img/all1.3/arrows-dobble.svg);
+    background-image: url(./static/arrows-dobble.svg);
     background-repeat: no-repeat;
     transform: translateY(5px) rotate(0deg);
     transition: rotate 1s ease-in; }
@@ -1468,9 +1468,11 @@ body > div > main > section.services.types > div > div > ul > .types__element {
     width: 220px; }
   .footer .confidential-politics {
     align-self: flex-start;
-    width: 214px; }
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
   .footer .not-oferta {
-    width: 330px;
+    width: 362px;
     text-align: right;
     padding-right: 33px; }
 
@@ -2115,7 +2117,9 @@ body > div > main > section.services.types > div > div > ul > .types__element {
     background-color: #eaeaea;
     border-radius: 1px; }
   .header .header__logo-link {
-    margin-left: 41px; } }
+    margin-left: 41px; }
+  .not-oferta {
+    padding-right: 24px; } }
 
 @media (min-width: 768px) and (max-width: 1119px) {
   .aside-menu--hidden,
@@ -2147,7 +2151,8 @@ body > div > main > section.services.types > div > div > ul > .types__element {
   .footer {
     padding-left: 24px; }
     .footer .not-oferta {
-      padding-right: 24px; }
+      padding-right: 24px;
+      width: 250px; }
   .services__proposal {
     margin-right: 42.06%;
     padding-left: 24px; }
@@ -2436,6 +2441,10 @@ body > div > main > section.services.types > div > div > ul > .types__element {
     padding-bottom: 19px; }
     .footer .confidential-politics {
       align-self: center; }
+    .footer .not-oferta {
+      text-align: center;
+      width: 320px;
+      padding-right: 0; }
   .services__proposal {
     margin-right: 5%;
     padding-left: 16px; }
