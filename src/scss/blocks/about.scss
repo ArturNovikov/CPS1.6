@@ -14,7 +14,7 @@
     text-align: center;
     content: '';
     @include width-height(15px, 15px);
-    background: url(/src/img/all1.3/arrows-dobble.svg);
+    background-image: url('../img/all1.3/arrows-dobble.svg');
     background-repeat: no-repeat;
     transform: translateY(5px) rotate(0deg);
     transition: rotate 1s ease-in;

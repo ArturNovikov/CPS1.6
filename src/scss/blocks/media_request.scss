@@ -330,6 +330,9 @@
   .header .header__logo-link {
     margin-left: 41px;
   }
+  .not-oferta {
+    padding-right: 24px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1119px) {
   .aside-menu--hidden,
@@ -354,6 +357,7 @@
     padding-left: 24px;
     .not-oferta {
       padding-right: 24px;
+      width: 250px;
     }
   }
   .services__proposal {
@@ -703,6 +707,11 @@
     padding-bottom: 19px;
     .confidential-politics {
       align-self: center;
+    }
+    .not-oferta {
+      text-align: center;
+      width: 320px;
+      padding-right: 0;
     }
   }
   .services__proposal {
