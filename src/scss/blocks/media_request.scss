@@ -503,10 +503,16 @@
   .prices__header {
     display: none;
   }
+  .prices {
+    h2.services__title {
+      margin-bottom: 16px;
+    }
+  }
   .services__prices div .prices__menu {
     flex-direction: row;
     .prices__element {
       box-sizing: border-box;
+      border: 1px solid $back-ground-main-color;
       @include width-height(260px, 200px);
       @include flexible(flex, space-between, flex-start, column);
       .services__button {
@@ -805,19 +811,21 @@
   .aside__container {
     @include aside__container;
   }
-  .services::after {
-    content: ' ';
-    position: absolute;
-    width: 24px;
-    height: 81px;
-    background: linear-gradient(
-      270deg,
-      $back-ground-main-color 16.84%,
-      rgba(248, 248, 248, 0.0001) 100%
-    );
-    z-index: 10;
-    left: 97%;
-    top: 64px;
+  .brands__container {
+    &::after {
+      content: ' ';
+      position: absolute;
+      width: 24px;
+      height: 81px;
+      background: linear-gradient(
+        270deg,
+        $back-ground-main-color 16.84%,
+        rgba(248, 248, 248, 0.0001) 100%
+      );
+      z-index: 10;
+      left: 97%;
+      top: 12px;
+    }
   }
 }
 
@@ -833,18 +841,20 @@
     @include aside__container;
   }
 
-  .services::after {
-    content: ' ';
-    position: absolute;
-    width: 24px;
-    height: 81px;
-    background: linear-gradient(
-      270deg,
-      $back-ground-main-color 16.84%,
-      rgba(248, 248, 248, 0.0001) 100%
-    );
-    z-index: 10;
-    left: 93%;
-    top: 88px;
+  .brands__container {
+    &::after {
+      content: ' ';
+      position: absolute;
+      width: 24px;
+      height: 81px;
+      background: linear-gradient(
+        270deg,
+        $back-ground-main-color 16.84%,
+        rgba(248, 248, 248, 0.0001) 100%
+      );
+      z-index: 10;
+      left: 93%;
+      top: 12px;
+    }
   }
 }
