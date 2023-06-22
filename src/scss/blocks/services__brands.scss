@@ -101,6 +101,7 @@ button,
   background-repeat: no-repeat;
   background-image: url('../img/all1.3/arrows-dobble.svg');
   transform: translate(-20px, 6.5px);
+  transition: all 0.25s;
   width: 24px;
   height: 24px;
 }
@@ -111,6 +112,7 @@ button,
   background-repeat: no-repeat;
   background-image: url('../img/all1.3/arrows-dobble.svg');
   transform: translate(-35px, -6.5px) rotate(180deg);
+  transition: all 0.25s;
   width: 24px;
   height: 24px;
 }
