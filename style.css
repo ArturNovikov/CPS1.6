@@ -1829,7 +1829,7 @@ body > div > main > section.services.types > div > div > ul > .types__element {
     height: 32px;
     min-width: auto;
     background-color: #ff3e79;
-    background-image: url("/src/img/all1.6/whiteArrow.svg");
+    background-image: url(./static/whiteArrow.svg);
     background-repeat: no-repeat;
     background-position: 115px;
     border: none;
